@@ -1,4 +1,4 @@
-class MyPetClabMain:
+class MyPetClabModule:
     # Не плутати таке присвоєння, ми через конструктор предаємо аргумент name який буде присвоєно атрибуту self.name 
     def __init__(self, name:str, surname:str, age:int=None, pets:list=[], dog_name:str=None, cat_name:str=None) -> None:
         self.name = name

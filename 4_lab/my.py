@@ -1,5 +1,5 @@
 import requests
 
-r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))
+r = requests.get('http://127.0.0.1:5000/about')
 
-print(f"Результат виконання запиту за допомогою бібліотеки requests: {r.status_code}")
+print(f"Результат виконання запиту за допомогою бібліотеки requests: {r.text}")

@@ -1,10 +1,11 @@
 from flask import Flask, render_template
+import os
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Привіт, це мій перший веб-сайт на Flask!'
+    return f'Привіт, ми виводимо змінну середовища: {os.environ.get("MY_ENV")}'
 
 @app.route('/about')
 def about():
